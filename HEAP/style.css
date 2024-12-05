@@ -1,0 +1,207 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+/*-----------------------------------------#212131--------------------------button code----   <-   ->   ------*/
+.nextprev ul{
+	position:absolute;
+	top:10%;
+	left:90%;
+	transform:translate(-50%,-50%);
+	margin:0;
+	padding:0;
+	display:flex;
+}
+.nextprev ul li{
+	list-style:none; 
+	width:80px;
+	height:80px;
+	background:#262626;
+	margin:0 10px;
+border-radius:50%;
+transition:0.5s;
+	
+}
+.nextprev ul li:hover{
+	background:#0070ff;
+}
+.nextprev ul li span{
+	position: absolute;
+	width:20px;
+	height:20px;
+	border:4px solid #fff;
+	transition:0.5s;/*run it*/
+}
+.nextprev ul li.next span{
+	top: 50%;
+	right:20%;
+	transform:translateY(-50%)rotate(-45deg);/*diamond 1 2 3 4....4th one boxline disappears run it*/
+	border-left:none;
+	border-top:none;
+}
+.nextprev ul li.next:hover span{
+	right:16%;/*runit added after ul li.next:hover span:before{*/
+}
+.nextprev ul li.next span:before{
+	content:'';
+position:absolute;
+width:38px;
+height:4px;
+background:#fff;/*run*/          /*run*/
+transform-origin:right;
+transform:rotate(45deg) translate(0px,25px)scaleX(0);  /*run*/
+transition:0.5s;
+}
+.nextprev ul li.next:hover span:before{
+transform:rotate(45deg) translate(0px,25px)scaleX(1);   /*run*/
+}
+
+/*copy paste for prev and run it change right:20% toleft and border left to rght ,and top to bottom*/
+.nextprev ul li.prev span{
+	top: 50%;
+	left:20%;
+	transform:translateY(-50%)rotate(-45deg);
+border-right:none;
+border-bottom:none;
+}
+.nextprev ul li.prev:hover span{
+left:16%;/*runit added after ul li.next:hover span:before{*/
+}
+.nextprev ul li.prev span:before{
+	content:'';
+position:absolute;
+width:38px;
+height:4px;
+background:#fff;/*run*/          /*run*/
+transform-origin:left;/*chaned to left line align to this <*/
+transform:rotate(45deg) translate(-2px,-1px)scaleX(0);  /*run*/
+transition:0.5s;
+}
+.nextprev ul li.prev:hover span:before{
+transform:rotate(45deg) translate(-2px,-1px)scaleX(1);   /*run*/
+}
+/*-------------------------------------------------------------------till here button code----   <-   ->   ------*/
+.head {
+margin-top: 20px;
+margin-right: 20vw;
+margin-left: 20vw;
+text-align: center;
+font-size: 30px;
+background-color: #ecc1fe;
+color: black;
+border-radius:19px;
+font-weight: bolder;
+}
+.header {
+	font-size: 20px;
+	text-align: center;
+}
+
+#array {
+	background-color: black;
+	height: 270px;
+	width: 598px;
+	margin: auto;
+	position: relative;
+	margin-top: 64px;
+}
+
+.block {
+	width: 28px;
+	background-color: #6b5b95;
+	position: absolute;
+	bottom: 0px;
+	transition: 0.2s all ease;
+}
+
+.block_id {
+	position: absolute;
+	color: #ecc1fe;
+	margin-top: -20px;
+	width: 100%;
+	text-align: center;
+}
+
+.block_id2 {
+	position: absolute;
+	color: black;
+	margin-top: 22px;
+	width: 100%;
+	text-align: center;
+}
+
+.block2 {
+	width: 28px;
+	background-color: darkgray;
+	position: absolute;
+	transition: 0.2s all ease;
+}
+
+.block_id3 {
+	position: absolute;
+	color: black;
+	margin-top: 1px;
+	width: 100%;
+	text-align: center;
+}
+
+#count {
+	height: 20px;
+	width: 598px;
+	margin: auto;
+}
+.btn1
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #ecc1fe;
+border-radius: 10px;
+color: black;
+font-size: 16px;
+border: black;
+margin-top: 1vw;
+margin-right: 1vw;
+}
+.btn2
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #ecc1fe;
+border-radius: 10px;
+color: black;
+font-size: 16px;
+border: black
+}
+
+.btn3
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #ecc1fe;
+border-radius: 10px;
+color: black;
+font-size: 16px;
+border: black
+}
+
+.btn4
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #ecc1fe;
+border-radius: 10px;
+color: black;
+font-size: 16px;
+border: black
+}
+.btn5
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #ecc1fe;
+border-radius: 10px;
+color: black;
+font-size: 16px;
+border: black
+}
